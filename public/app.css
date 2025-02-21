@@ -116,9 +116,8 @@ body.loggedIn .header ul li.loggedOut {
   border-width: 1px 0 0 0;
   border-color: #fff;
   border-style: solid;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
 }
 
 .footer .copyright {
@@ -195,7 +194,7 @@ button.cta:visited {
 .warning {
   font-style: italic;
   color: #c83737;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   line-height: 150%;
   padding: 0 0 20px 0;
@@ -268,21 +267,6 @@ input.disabled {
   color: #808080;
 }
 
-.tos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tos > .inputLabel {
-  padding: 0;
-  margin-right: 8px;
-}
-
-.tos > input[type="checkbox"] {
-  width: fit-content;
-}
-
 .backButton {
   text-transform: uppercase;
   font-weight: bold !important;
@@ -343,4 +327,19 @@ td a:active {
 #createCheckCTA {
   margin-top: 40px;
   display: none;
+}
+
+.tos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tos > .inputLabel {
+  padding: 0;
+  margin-right: 8px;
+}
+
+.tos > input[type="checkbox"] {
+  width: fit-content;
 }
